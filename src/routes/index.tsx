@@ -193,7 +193,7 @@ function Dashboard() {
             <CardTitle className="text-base">销售品类分布</CardTitle>
           </CardHeader>
           <CardContent>
-            <ChartContainer className="h-[280px] w-full">
+            <ChartContainer config={{ value: { label: "销售额" } }} className="h-[280px] w-full">
               <BarChart data={categoryData} layout="vertical">
                 <CartesianGrid strokeDasharray="3 3" horizontal={false} />
                 <XAxis type="number" tickLine={false} axisLine={false} tickMargin={8} />
